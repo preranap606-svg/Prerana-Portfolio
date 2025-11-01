@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prerana P — Full Stack PHP Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#6C63FF;
+      --secondary:#00C9A7;
+      --bg-dark:#0E0E10;
+      --bg-card:#1E1E22;
+      --text-light:#F1F1F1;
+      --text-muted:#AAAAAA;
+      --gradient:linear-gradient(135deg,#6C63FF,#00C9A7);
+    }
+    body{background:var(--bg-dark);color:var(--text-light);font-family:'Poppins',sans-serif;overflow-x:hidden;}
+    .navbar{background:rgba(20,20,25,0.95)!important;backdrop-filter:blur(8px);}
+    .nav-link{color:var(--text-light)!important;transition:color .3s;}
+    .nav-link:hover{color:var(--secondary)!important;}
+    .hero{background:var(--gradient);padding:6rem 0;text-align:left;animation:fadeIn 1s ease-in-out;}
+    .hero h1{font-weight:700;font-size:2.8rem;animation:slideIn 1s ease-in-out;}
+    .hero .btn{background:#fff;color:var(--primary);font-weight:600;border-radius:50px;padding:.7rem 1.4rem;transition:.3s;}
+    .hero .btn:hover{background:var(--secondary);color:#fff;transform:scale(1.05);}
+    .card{background:var(--bg-card);border:none;border-radius:1rem;box-shadow:0 0 20px rgba(108,99,255,0.15);transition:transform .3s, box-shadow .3s;}
+    .card:hover{transform:translateY(-5px);box-shadow:0 0 30px rgba(108,99,255,0.25);}
+    .skill-badge{background:rgba(108,99,255,0.15);color:var(--secondary);border-radius:999px;padding:.4rem .8rem;margin:.25rem;display:inline-block;font-weight:500;}
+    .section-title{font-weight:700;color:var(--secondary);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.5px;}
+    footer{background:var(--bg-card);padding:2rem 0;border-top:1px solid #222;color:var(--text-muted);}
+    footer a{color:var(--secondary);}
+    @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+    @keyframes slideIn{from{transform:translateY(30px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+    @keyframes glow{0%{box-shadow:0 0 5px var(--secondary);}50%{box-shadow:0 0 20px var(--primary);}100%{box-shadow:0 0 5px var(--secondary);}}
+    .cta-btn{background:var(--primary);color:#fff;border:none;border-radius:50px;padding:.7rem 1.4rem;animation:glow 2s infinite ease-in-out;}
+    .cta-btn:hover{background:var(--secondary);}
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-light" href="#">Prerana P</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="btn cta-btn ms-2" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="about">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1>Prerana P</h1>
+        <h5 class="fw-normal mb-4 text-light">Full Stack PHP Developer | Bangalore-560058</h5>
+        <p class="lead mb-4 text-light">Driven and highly motivated PHP Engineer with years of hands-on experience in web development. Passionate about creating efficient and scalable PHP solutions, committed to delivering high-quality code and exceptional user experiences.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+      <div class="col-lg-5 text-center">
+        <div class="overflow-hidden d-inline-block" style="width:250px;box-shadow:0 0 25px rgba(255,255,255,0.3);animation:glow 3s infinite alternate;">
+          <img src="./assets/images/p2.png" alt="Prerana" style="width:250px;height:auto;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+  <!-- Projects -->
+  <section id="projects" class="mb-5">
+    <h3 class="section-title">Projects</h3>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 h-100">
+          <h5 class="fw-bold mb-2 text-light">PTP (PT Provider) — Metrology</h5>
+          <p class="text-light mb-0">Testing & bug fixes to improve functionality and UX. Built with PHP, MySQL, Bootstrap.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 h-100">
+          <h5 class="fw-bold mb-2 text-light">AEAMT Training Website</h5>
+          <p class="text-light mb-0">Training website currently in testing phase — full-stack development.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 h-100">
+          <h5 class="fw-bold mb-2 text-light">Drishti Website</h5>
+          <p class="text-light mb-0">Live project — ongoing maintenance and feature updates.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 h-100">
+          <h5 class="fw-bold mb-2 text-light">ECchawani</h5>
+          <p class="text-light mb-0">Live project developed during BEL apprenticeship.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-3 h-100">
+          <h5 class="fw-bold mb-2 text-light">Armed Force Flag Day Fund</h5>
+          <p class="text-light mb-0">Live project supporting donations and fund management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="mb-5">
+    <h3 class="section-title">Experience</h3>
+
+    <div class="card p-4 mb-3">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="text-light mb-1">Project Assistant - II</h5>
+          <small class="text-light">CMTI (Central Manufacturing Technology Institute)</small>
+        </div>
+        <small class="text-light">June 2023 - Present</small>
+      </div>
+      <ul class="mt-3 mb-0">
+        <li class="text-light">Working on PTP (PT Provider) for Metrology department — bug-fixing and functionality improvements during testing.</li>
+        <li class="text-light">AEAMT Training Website (testing stage).</li>
+        <li class="text-light">Worked on Drishti Website (Live Project).</li>
+        <li class="text-light">Tech stack: HTML, PHP, JavaScript, Bootstrap, MySQL.</li>
+      </ul>
+    </div>
+
+    <div class="card p-4 mb-3">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="text-light mb-1">Apprentice (Software SBU)</h5>
+          <small class="text-light">BEL (Bharat Electronics Limited)</small>
+        </div>
+        <small class="text-light">Jan 2022 - June 2023</small>
+      </div>
+      <ul class="mt-3 mb-0">
+        <li class="text-light">Worked on ECchawani (Live Project).</li>
+        <li class="text-light">Worked on Armed Force Flag Day Fund (Live Project).</li>
+        <li class="text-light">Undergone Advanced training for 2 months in BEL (electronics & testing).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates" class="py-5">
+    <h3 class="section-title text-center mb-4 text-light">Certificates</h3>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+          <div class="card bg-dark text-light shadow-sm h-100 p-3 text-center border-warning border-2 rounded-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-award-fill text-warning"></i> One-year Apprenticeship Certification (BEL Apprenticeship)</h5>
+            <a href="assets/certificate/Apprentice_Certificate.pdf" target="_blank" class="btn btn-warning fw-bold px-4 mt-2"><i class="bi bi-eye"></i> View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="mb-5">
+    <h3 class="section-title">Education</h3>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-center">
+          <h6 class="fw-bold text-light mb-1">Bachelors of Computer Applications (BCA)</h6>
+          <div class="text-light small">Manipal University Jaipur • 2023-2026</div>
+          <p class="mt-2 text-light small">3-year program — 7.34 CGPA</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-center">
+          <h6 class="fw-bold text-light mb-1">Diploma in Computer & Engineering</h6>
+          <div class="text-light small">M.E.I Polytechnic • 2018-2021</div>
+          <p class="mt-2 text-light small">8.4 CGPA</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 h-100 text-center">
+          <h6 class="fw-bold text-light mb-1">SSLC</h6>
+          <div class="text-light small">Apollo Public & High School • 2018</div>
+          <p class="mt-2 text-light small">89.92%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <h3 class="section-title text-center mb-4 text-light">Contact</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card p-4 text-center bg-dark border-0">
+          <p class="text-light mb-2"><i class="bi bi-envelope"></i> preranap606@gmail.com</p>
+          <p class="text-light mb-2"><i class="bi bi-telephone"></i> 9538085477</p>
+          <p class="text-light mb-2"><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/prerana-p-22b441282/" target="_blank" class="text-light text-decoration-none">LinkedIn</a></p>
+          <p class="text-light mb-0"><i class="bi bi-github"></i> <a href="https://github.com/preranap606-svg" target="_blank" class="text-light text-decoration-none">GitHub</a></p>
+          <p class="text-light mt-2"><i class="bi bi-file-earmark-person"></i> <a href="./assets/resume/Resume.pdf" target="_blank" class="btn btn-primary text-dark fw-bold">Download Resume</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>© 2025 Prerana P. Built with HTML & CSS.</div>
+    <div>
+      <a href="https://www.linkedin.com/in/prerana-p-22b441282/" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:preranap606@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
